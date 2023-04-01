@@ -34,4 +34,28 @@ npm run build
 
 * **Песочница**
   * Html страничка `playground/index.html`
-  * Статические файлы `static`
+  * Статические файлы `static/`
+
+## Своё название библиотеки
+
+Для смены названия, нужно отредактировать ряд файлов
+
+### `package.json`
+
+Меняем поля: 
+
+* name
+* main
+
+### `build/webpack.base.conf.js`
+
+Меняем поля: 
+
+* entry.simpleLibrary (свойство simpleLibrary меняем на своё название)
+* output.library.name
+
+### `build/webpack.prod.conf.js`
+
+Меняем полe: 
+
+* banner
