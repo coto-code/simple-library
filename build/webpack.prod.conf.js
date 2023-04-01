@@ -1,12 +1,14 @@
-import webpack from "webpack";
-import { merge } from "webpack-merge";
-import baseWebpackConfig from "./webpack.base.conf.js";
-import TerserPlugin from "terser-webpack-plugin";
-const test = require("yes")
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-extraneous-dependencies */
+import webpack from 'webpack';
+import { merge } from 'webpack-merge';
+import TerserPlugin from 'terser-webpack-plugin';
+import baseWebpackConfig from './webpack.base.conf.js';
+
 const version = process.env.npm_package_version;
 
 export default merge(baseWebpackConfig, {
-  mode: "production",
+  mode: 'production',
   devtool: false,
   optimization: {
     minimize: true,
