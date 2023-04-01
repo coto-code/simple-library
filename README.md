@@ -59,3 +59,11 @@ npm run build
 Меняем полe: 
 
 * banner
+
+### `src/scripts/index.js`
+
+Меняем имя класса
+
+### `playground/index.html`
+
+Меняем вызов библиотеки (`new SimpleLibrary`)
