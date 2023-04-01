@@ -40,30 +40,30 @@ npm run build
 
 Для смены названия, нужно отредактировать ряд файлов
 
-### `package.json`
+### *package.json*
 
 Меняем поля: 
 
 * name
 * main
 
-### `build/webpack.base.conf.js`
+### *build/webpack.base.conf.js*
 
 Меняем поля: 
 
 * entry.simpleLibrary (свойство simpleLibrary меняем на своё название)
 * output.library.name
 
-### `build/webpack.prod.conf.js`
+### *build/webpack.prod.conf.js*
 
 Меняем полe: 
 
 * banner
 
-### `src/scripts/index.js`
+### *src/scripts/index.js*
 
 Меняем имя класса
 
-### `playground/index.html`
+### *playground/index.html*
 
 Меняем вызов библиотеки (`new SimpleLibrary`)
